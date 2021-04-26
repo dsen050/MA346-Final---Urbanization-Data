@@ -3,8 +3,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-by_residence = pd.read_excel("Urbanization-data.xlsx", sheet_name='by_residence')
-by_res_wealth = pd.read_excel("Urbanization-data.xlsx", sheet_name='by_residence_wealthquintiles')
+by_residence = pd.read_excel("Urbanization-data.xlsx", sheet_name='by_residence', engine='openpyxl')
+by_res_wealth = pd.read_excel("Urbanization-data.xlsx", sheet_name='by_residence_wealthquintiles', engine='openpyxl')
 
 # print(by_residence.head())
 
